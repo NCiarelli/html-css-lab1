@@ -25,17 +25,18 @@ button {
 nav {
   display: flex;
   flex-direction: column;
+  margin: 5px;
 }
 
 /* Links */
 a {
   text-decoration: none;
-  margin: 5px;
+  margin: 5px 0px;
 }
 
 /* Headings */
 h2 {
-  margin: 0;
+  margin: 5px 0px;
 }
 
 /* Buttons */
