@@ -1,8 +1,55 @@
+/* Page wide styles */
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #f9fafc;
 }
 
+/* Setup general colors for the page */
+h1,
+h2 {
+  color: #000;
+}
+
+a,
+p {
+  color: #69696a;
+}
+
+button {
+  color: #fff;
+  background-color: #000;
+}
+
+/* Styles for all elements of specific types */
+/* Nav Bar */
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Links */
 a {
   text-decoration: none;
+  margin: 5px;
+}
+
+/* Headings */
+h2 {
+  margin: 0;
+}
+
+/* Buttons */
+button {
+  border-radius: 15px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Paragraphs */
+p {
+  border-left-style: solid;
+  border-left-color: #69696a;
+  border-left-width: 3px;
+  padding-left: 10px;
 }
