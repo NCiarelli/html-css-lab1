@@ -10,12 +10,12 @@ h2 {
   color: #000;
 }
 
-a,
+.nav_link,
 p {
   color: #69696a;
 }
 
-button {
+.button_link {
   color: #fff;
   background-color: #000;
 }
@@ -31,20 +31,26 @@ nav {
 /* Links */
 a {
   text-decoration: none;
+}
+
+/* Navigation Links */
+.nav_link {
   margin: 5px 0px;
+}
+
+/* Buttons */
+.button_link {
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Headings */
 h2 {
   margin: 5px 0px;
-}
-
-/* Buttons */
-button {
-  border-radius: 15px;
-  display: block;
-  width: 100%;
-  padding: 10px;
 }
 
 /* Paragraphs */
