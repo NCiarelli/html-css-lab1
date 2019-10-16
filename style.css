@@ -13,7 +13,7 @@ a.main_link {
 }
 
 .nav_link,
-p {
+p.main_text {
   color: #69696a;
 }
 
@@ -22,12 +22,23 @@ p {
   background-color: #000;
 }
 
+.big_circle {
+  background-color: rgba(247, 136, 167, 0.6);
+}
+
+.medium_circle {
+  background-color: rgba(247, 193, 162, 0.7);
+}
+
+.small_circle {
+  background-color: rgba(207, 130, 213, 0.6);
+}
+
 /* Specific styling */
 /* Header */
 header {
   display: flex;
   flex-direction: column;
-  margin: 5px;
 }
 
 /* Nav Bar */
@@ -43,12 +54,12 @@ a {
 
 /* Main Link */
 .main_link {
-  margin: 5px 0px;
+  margin: 5px;
 }
 
 /* Navigation Links */
 .nav_link {
-  margin: 5px 0px;
+  margin: 5px;
   width: fit-content;
 }
 
@@ -57,16 +68,88 @@ a {
   /* box-sizing: border-box; */
   border-radius: 20px;
   display: block;
-  padding: 10px;
+  padding: 10px 20px;
   margin: auto 5px;
   width: auto;
   text-align: center;
 }
 
+main {
+  margin: 5px;
+}
 /* Paragraphs */
-p {
+p.main_text {
   border-left-style: solid;
   border-left-color: #69696a;
   border-left-width: 3px;
   padding-left: 10px;
+}
+
+/* Main Set of Part 2 Additions */
+
+@media screen and (min-width: 768px) {
+  /* Changes to the Nav Bar */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  nav {
+    flex-direction: row;
+  }
+
+  /* Changes to the Main Section */
+  main {
+    display: flex;
+  }
+  .main_text_container {
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  /* Adding circles  */
+  .circles_container {
+    position: relative;
+    width: 50%;
+    /* top: 100px; */
+    box-sizing: border-box;
+  }
+  .big_circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    right: 70px;
+    z-index: 1;
+    /* box-sizing: border-box; */
+  }
+  .medium_circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    right: 0px;
+    top: 120px;
+    z-index: 3;
+    /* box-sizing: border-box; */
+  }
+  .small_circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    right: 0px;
+    top: 40px;
+    z-index: 2;
+    /* box-sizing: border-box; */
+  }
+
+  /* Make Scroll Down Button fixed to the bottom center of page */
+  a.scroll_down {
+    position: fixed;
+    bottom: 0;
+    /* Using transform translateX for horizontal centering */
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
