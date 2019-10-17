@@ -100,48 +100,56 @@ p.main_text {
 
   /* Changes to the Main Section */
   main {
+    /* Making the differnet sections of the main to sit horizontally next to ezh other */
     display: flex;
   }
+  /* Making the main paragraph section take up half the available space */
   .main_text_container {
-    box-sizing: border-box;
-    width: 50%;
+    /* box-sizing: border-box; */
+    /* width: 50%; */
+    flex: 1;
   }
 
   /* Adding circles  */
+  /* Giving the circles container half the available space and set up absolute positioning for the circles*/
   .circles_container {
     position: relative;
-    width: 50%;
+    /* box-sizing: border-box; */
+    /* width: 50%; */
+    flex: 1;
     /* top: 100px; */
-    box-sizing: border-box;
   }
+  /* Big circle size, positioning, and making it a circle */
   .big_circle {
     position: absolute;
-    border-radius: 50%;
     width: 200px;
     height: 200px;
     right: 70px;
     z-index: 1;
     /* box-sizing: border-box; */
+    border-radius: 50%;
   }
+  /* Medium circle size, positioning, and making it a circle */
   .medium_circle {
     position: absolute;
-    border-radius: 50%;
     width: 150px;
     height: 150px;
     right: 0px;
     top: 120px;
     z-index: 3;
     /* box-sizing: border-box; */
+    border-radius: 50%;
   }
+  /* Small circle size, positioning, and making it a circle */
   .small_circle {
     position: absolute;
-    border-radius: 50%;
     width: 120px;
     height: 120px;
     right: 0px;
     top: 40px;
     z-index: 2;
     /* box-sizing: border-box; */
+    border-radius: 50%;
   }
 
   /* Make Scroll Down Button fixed to the bottom center of page */
